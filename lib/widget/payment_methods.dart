@@ -45,19 +45,25 @@ class PaymentMethods extends StatelessWidget {
                             name,
                             textAlign: TextAlign.left,
                             style: TextStyle(
-                              fontSize: 18.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.cyan,
                             ),
                           ),
                         ),
 
-                        Text("$amount",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text("$amount",
+                            style: TextStyle(
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.grey[800],
+                            ),
                           ),
                         ),
+
+
                       ],
                     ),
                   ],

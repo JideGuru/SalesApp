@@ -15,6 +15,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Stack(
           children: <Widget>[
@@ -86,10 +87,10 @@ class _HomeState extends State<Home> {
                     ],
                   ),
                 ),
-                Container(
-                  height: MediaQuery.of(context).size.height * .75,
-                  color: Colors.white,
-                ),
+//                Container(
+//                  height: MediaQuery.of(context).size.height * .75,
+//                  color: Colors.white,
+//                ),
               ],
             ),
 
@@ -153,20 +154,28 @@ class _HomeState extends State<Home> {
                       amount: r"$1000.22",
                     ),
 
+                    SizedBox(height: 10.0,),
+
                     PaymentMethods(
                       name: "Card",
                       amount: r"$450.25",
                     ),
+
+                    SizedBox(height: 10.0,),
 
                     PaymentMethods(
                       name: "Paypal",
                       amount: r"$100.33",
                     ),
 
+                    SizedBox(height: 10.0,),
+
                     PaymentMethods(
                       name: "Cheque",
                       amount: r"$300.2",
                     ),
+
+                    SizedBox(height: 10.0,),
 
                     PaymentMethods(
                       name: "Credit",

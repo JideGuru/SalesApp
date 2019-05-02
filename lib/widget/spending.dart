@@ -47,9 +47,12 @@ class Spendings extends StatelessWidget {
 
                         SizedBox(height: 10.0),
                         Text("$amount",
-                            style: TextStyle(
-                                fontSize: 25.0,
-                                fontWeight: FontWeight.bold))
+                          style: TextStyle(
+                            fontSize: 26.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[800],
+                          ),
+                        ),
                       ],
                     ),
                   ],
