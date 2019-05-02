@@ -1,4 +1,4 @@
-# 🐯SalesApp [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# 🤑SalesApp [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Flutter representation of a Sales App UI i found in [Uplabs](https://www.uplabs.com/posts/android-realtime-sales-app)
 
