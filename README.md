@@ -3,14 +3,11 @@
 Flutter representation of a Sales App UI i found in [Uplabs](https://www.uplabs.com/posts/android-realtime-sales-app)
 
 ## 📸 ScreenShots
-Uplabs UI
 
-<img src="screenshots/1.png">
+| Uplabs UI | My UI |
+|------|-------|
+|<img src="screenshots/1.png">|<img src="screenshots/1.png">|
 
-
-My UI
-
-<img src="screenshots/2.png" width="400">
 
 
 ## ✨ Requirements
