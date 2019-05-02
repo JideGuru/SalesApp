@@ -4,9 +4,11 @@ Flutter representation of a Sales App UI i found in [Uplabs](https://www.uplabs.
 
 ## 📸 ScreenShots
 Uplabs UI
-<img src="https://assets.materialup.com/uploads/89dbb834-18fe-44b0-b764-3e2007cfa012/preview.png">
+
+<img src="https://assets.materialup.com/uploads/7da1d4b0-174f-4673-8d43-75c0eb9cebb1/attachment.png">
 
 My UI
+
 <img src="screenshots/1.png" width="400">
 
 
