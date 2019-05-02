@@ -27,24 +27,31 @@ class PaymentMethods extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(left: 10.0, right: 20.0),
-                child: Icon(Icons.monetization_on, color: Colors.cyan, size: 40.0,),
+                child: Icon(
+                  Icons.monetization_on,
+                  color: Colors.cyan,
+                  size: 40.0,
+                ),
               ),
-              Container(
+              Expanded(
                 child: Column(
-
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        Text(
-                          name,
-                          textAlign: TextAlign.left,
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.cyan,
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            name,
+                            textAlign: TextAlign.left,
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.cyan,
+                            ),
                           ),
                         ),
+
                         Text("$amount",
                           style: TextStyle(
                             fontSize: 20.0,
