@@ -1,6 +1,24 @@
-# sales_app_ui
+# 🐯SalesApp [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-A new Flutter application.
+Flutter representation of a Sales App UI i found in [Uplabs](https://www.uplabs.com/posts/android-realtime-sales-app)
+
+## 📸 ScreenShots
+Uplabs UI
+<img src="https://assets.materialup.com/uploads/89dbb834-18fe-44b0-b764-3e2007cfa012/preview.png">
+
+My UI
+<img src="screenshots/1.png" width="400">
+
+
+## ✨ Requirements
+* Any Operating System (ie. MacOS X, Linux, Windows)
+* Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+* A little knowledge of Dart and Flutter
+* A brain to think 🤓🤓
+
+## 🤓 Author(s)
+**Olusegun Festus Babajide**
+
 
 ## Getting Started
 
