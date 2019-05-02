@@ -22,31 +22,37 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 Container(
                   decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(20.0),
+                      bottomRight: Radius.circular(20.0),
+                    ),
+
                     gradient: LinearGradient(
                       begin: Alignment.centerLeft,
                       end: Alignment.centerRight,
                       // Add one stop for each color. Stops should increase from 0 to 1
-                      stops: [0.5, 0.9],
+                      stops: [0.2, 0.7],
                       colors: [
-                        Colors.green,
-                        Colors.greenAccent,
+                        Color(0xff00b2bb),
+                        Color(0xff79d2a6),
 //                        Colors.blue[400],
 //                        Colors.blue[300],
                       ],
                       // stops: [0.0, 0.1],
                     ),
                   ),
-                  height: MediaQuery.of(context).size.height * .45,
-                  padding: EdgeInsets.only(top: 30, left: 15, right: 15),
+
+                  height: MediaQuery.of(context).size.height * .40,
+                  padding: EdgeInsets.only(top: 20, left: 30, right: 20),
                   child: Column(
                     children: <Widget>[
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text("07 April 2017 to 07 April 2019",
+                          Text("01 April 2017 to 01 April 2019",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 17.0,
+                              fontSize: 19.0,
                               fontWeight: FontWeight.w500,
                             ),
                           ),
@@ -55,6 +61,7 @@ class _HomeState extends State<Home> {
                               Icons.keyboard_arrow_down,
                               color: Colors.white,
                             ),
+                            iconSize: 40.0,
                             onPressed: () {},
                           )
                         ],
@@ -64,7 +71,7 @@ class _HomeState extends State<Home> {
                         "Total Sale",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 17.0,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 10),
@@ -72,7 +79,7 @@ class _HomeState extends State<Home> {
                         r"$15,990.00",
                         style: TextStyle(
                             color: Colors.white,
-                            fontSize: 30.0,
+                            fontSize: 34.0,
                             fontWeight: FontWeight.bold),
                       ),
                       SizedBox(height: 10),
@@ -81,7 +88,7 @@ class _HomeState extends State<Home> {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * .75,
-                  color: Colors.grey[100],
+                  color: Colors.white,
                 ),
               ],
             ),
@@ -89,9 +96,9 @@ class _HomeState extends State<Home> {
             Container(
               alignment: Alignment.topCenter,
               padding: new EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * .31,
-                  right: 10.0,
-                  left: 10.0),
+                  top: MediaQuery.of(context).size.height * .27,
+                  right: 20.0,
+                  left: 20.0),
               child: new Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
@@ -108,16 +115,16 @@ class _HomeState extends State<Home> {
                     Container(
                       padding: EdgeInsets.only(right: 10.0),
                       child: Spendings(
-                        name: "Cash",
-                        amount: r"$1000.22",
+                        name: "This Month",
+                        amount: r"$5,990.00",
                       ),
                     ),
 
                     Container(
                       padding: EdgeInsets.only(left: 10.0),
                       child: Spendings(
-                        name: "Cash",
-                        amount: r"$450.28",
+                        name: "This Week",
+                        amount: r"$200.00",
                       ),
                     ),
 
@@ -131,9 +138,9 @@ class _HomeState extends State<Home> {
             Container(
               alignment: Alignment.topCenter,
               padding: new EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * .50,
-                  right: 10.0,
-                  left: 10.0),
+                  top: MediaQuery.of(context).size.height * .47,
+                  right: 20.0,
+                  left: 20.0),
               child: new Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
@@ -147,10 +154,24 @@ class _HomeState extends State<Home> {
                     ),
 
                     PaymentMethods(
-                      name: "Cash",
-                      amount: r"$450.28",
+                      name: "Card",
+                      amount: r"$450.25",
                     ),
 
+                    PaymentMethods(
+                      name: "Paypal",
+                      amount: r"$100.33",
+                    ),
+
+                    PaymentMethods(
+                      name: "Cheque",
+                      amount: r"$300.2",
+                    ),
+
+                    PaymentMethods(
+                      name: "Credit",
+                      amount: r"$0.0",
+                    ),
                   ],
                 ),
               ),

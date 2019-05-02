@@ -14,35 +14,41 @@ class Spendings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(15.0)),
       elevation: 4.0,
       child: InkWell(
         onTap: () => print("tapped"),
         child: Container(
-          padding: EdgeInsets.only(top: 15.0, bottom: 15.0, right: 15.0),
+          alignment: Alignment.center,
+          padding: EdgeInsets.only(top: 15.0, bottom: 0.0, right: 15.0),
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(100.0),
+            borderRadius: BorderRadius.circular(40.0),
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Expanded(
+
+              Center(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
+                    SizedBox(height: 10.0),
                     Column(
                       children: <Widget>[
                         Text(
                           name,
                           style: TextStyle(
-                            fontSize: 13.0,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.bold,
-                            color: Colors.cyan,
+                            color: Colors.green[400],
                           ),
                         ),
-                        Text("   $amount",
+
+                        SizedBox(height: 10.0),
+                        Text("$amount",
                             style: TextStyle(
-                                fontSize: 16.0,
+                                fontSize: 25.0,
                                 fontWeight: FontWeight.bold))
                       ],
                     ),
